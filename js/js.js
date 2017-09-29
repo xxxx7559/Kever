@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
     var d = $(window).height() / 5 + 100
     $(window).scroll(function () {
         if ($(window).scrollTop() + 100 >= $(window).height()) {
@@ -36,14 +36,14 @@
 
     $("#1a,#2a,#3a").hover(function () {
         var x = "#" + $(this).attr("id") + " +div"
-        $(x).css("top", "50px")
+        $(x).css("top", "60px")
         $(x).css("opacity", "1")
-        $(".p1-2-1 div").css("margin", "5% 2% 0 5%")
+        $(".p1-2-1 div").css("margin", "5% 0 0 5%")
     }, function () {
         var x = "#" + $(this).attr("id") + " ~div"
         $(x).css("top", "0px")
         $(x).css("opacity", "0")
-        $(".p1-2-1 div").css("margin", "5% -50% 0 25%")
+        $(".p1-2-1 div").css("margin","0 -25% 0 15%")
 
     });
     $("a[href]").click(function () {
