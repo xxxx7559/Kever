@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
     var d = $(window).height() / 5 + 100
     $(window).scroll(function () {
         if ($(window).scrollTop() + 100 >= $(window).height()) {
@@ -14,8 +14,12 @@ $(function () {
     });
     if ($(window).width() <= 1100) {
         $(".p1-2-1 div").css("font-size", "16px")
+        $(".back2-1").css("font-size", "18px")
+
     } else {
         $(".p1-2-1 div").css("font-size", "30px")
+        $(".back2-1").css("font-size", "26px")
+
     };
 
     $("#phowidth img").each(function () {
@@ -56,5 +60,18 @@ $(function () {
 
         $(x).attr("checked", "checked")
         return false;
+    });
+
+    $("#back1,#back2,#back3").hover(function () {
+        var x = $(this).find("div").length
+        if (x <= 1) x++;
+        x = x * 10 + "0%"
+        $(this).find("div").css("opacity", "1")
+        $(this).animate({ height:x },100)
+        $(this).css("background","#aaa")
+    }, function () {
+        $(this).find("div").css("opacity", "0")
+        $(this).animate({ height: "auto" }, 100)
+        $(this).css("background", "rgba(0, 0, 0,0)")
     });
 });
