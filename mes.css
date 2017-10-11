@@ -1,0 +1,128 @@
+﻿        @media (min-width:769px) {
+            body, html {
+                font-family: 'Microsoft JhengHei';
+                height: 100%;
+                margin: 0;
+                background: radial-gradient(rgba(255, 255, 255,1)20%,rgba(0,0,0,0.3)80%);
+                background: -moz-radial-gradient(rgba(255, 255, 255,1)20%,rgba(0,0,0,0.3)80%);
+                background: -o-radial-gradient(rgba(255, 255, 255,1)20%,rgba(0,0,0,0.3)80%);
+                background: -webkit-radial-gradient(rgba(255, 255, 255,1)20%,rgba(0,0,0,0.3)80%);
+            }
+
+            .bd1 {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 0 20%;
+                height: 99.5%;
+                width: 60%;
+                z-index: 2;
+            }
+
+                .bd1 .bd2:nth-child(3) {
+                    height: 75%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    overflow-y: auto;
+                    margin: -5px 0 0 0;
+                    border: 5px dashed #808080;
+                }
+
+                .bd1 .bd2:nth-child(2) {
+                    border: 5px dashed rgba(0,0,0,0.3);
+                    position: relative;
+                    height: 5%;
+                    font-size: 28px;
+                    text-align: center;
+                }
+
+                .bd1 .bd2:nth-child(1) {
+                    height: 20%;
+                }
+
+            .bd2 {
+                z-index: 3;
+            }
+
+            #addval {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 10;
+                display: none;
+                /*background:rgba(0,0,0,0.5);*/
+            }
+
+                #addval + div {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    margin: 13% 35%;
+                    height: 40%;
+                    width: 30%;
+                    background: #ffffff;
+                    border: 1px dashed red;
+                    display: none;
+                    z-index: 12;
+                }
+
+            .valdiv {
+                display: flex;
+                flex-direction: column;
+                top: 0;
+                width: auto;
+                height: 100px;
+                margin: 1% 1%;
+                z-index: 10;
+                transition: 0.5s;
+            }
+
+                .valdiv div {
+                    border: 5px dotted rgba(0,0,0,0.3);
+                    transition: 0.3s;
+                    margin: -5px 0 0 0;
+                }
+
+                    .valdiv div:nth-child(1) {
+                        text-align: center;
+                        flex: 1;
+                        font-size: 70px;
+                    }
+
+                    .valdiv div:nth-child(2) {
+                        display: none;
+                        flex: 2;
+                    }
+
+                    .valdiv div:nth-child(3) {
+                        display: none;
+                        font-size: 10px;
+                        text-align: right;
+                    }
+
+            .MS {
+                text-align: center;
+                padding: 3% 0 0 0;
+            }
+
+            .black {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -0;
+            }
+
+            .bd3 {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 15px;
+            }
+        }

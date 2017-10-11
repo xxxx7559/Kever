@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/mes.js"></script>
+    <link href="mes.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="bd1">
+        <div class="bd2"></div>
+        <div class="bd2">
+            新增記事
+            <div class="bd3">adfadf</div>
+        </div>
+        <div class="bd2" id="len">
+            <div class="valdiv" draggable="true" ondragstart="drag(event)" id="drag1">
+                <div>點擊我</div>
+                <div>拖曳出框線外即刪除。</div>
+                <div>日期：2017-10-07</div>
+            </div>
+        </div>
+        <div class="black" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <div id="addval"></div>
+    <div class="MS">
+        標題：
+        <input type="text" id="ms1" placeholder="標題" style="width:50%" required />
+        <br />
+        日期：
+        <input type="date" id="ms2" placeholder="Your Deadline" style="width:50%" value="" required />
+        <br />
+        <textarea id="ms3" placeholder="請輸入內容" rows="10" style="width:65%"></textarea>
+        <br />
+        <input type="button" value="送出" id="msbut" onclick="saveval(this)" />
+    </div>
+</body>
+</html>
